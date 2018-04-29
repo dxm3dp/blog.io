@@ -10,13 +10,10 @@ header-img: "img/green.jpg"
 ### 坚信
 
 
+### 关注
 
-### 关注：
-- [元认知](http://www.mesule.com/)
-- [阳志平](http://www.yangzhiping.com/)
-- [ZoomQuiet](http://blog.zoomquiet.io/)
 
-### 代表作：
+### 代表作
 
 
 ### 我的朋友们
