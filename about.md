@@ -2,13 +2,8 @@
 layout: page
 title: "About"
 description: "学苟知本，六经皆我注脚 "
-header-img: "img/green.jpg"
+header-img: "img/green.jpg" 
 ---
-
-
-<center>
-    <p><img src="http://7xlfkx.com1.z0.glb.clouddn.com/white2.jpg" align="center"></p>
-</center>
 
 我是杜晓萌，这里是我的自我介绍。。。
 
