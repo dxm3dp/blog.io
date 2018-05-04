@@ -1,65 +1,130 @@
-﻿# Site settings
-title: 杜晓萌的博客
-header-img: "img/green.jpg"
-tagline: "cn"  
-description: "杜晓萌|读而立·写而生"  
-baseurl: ""
-url: "http://cnfeat"  
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+#
+# ,--------.      ,--.   ,--. ,--.
+# '--.  .--',---.  \  `.'  /,-'  '-.
+#    |  |  | .-. :  .'    \ '-.  .-'
+#    |  |  \   --. /  .'.  \  |  |
+#    `--'   `----''--'   '--' `--'
 
-# About/contact
-owner: 
-  name: " CnFeat"
-  email: CnFeat@gmail.com
-  bio: "写就是写的报酬"
+text_color_theme: default #eg: default | dark | forest | ocean | chocolate | orange
+## Base settings ##
+# url:  #the base hostname & protocol for your site e.g. https://www.someone.com
+baseurl: /
+title: 清道夫's blog
+description: > #this means to ignore newlines until "nav_lists:"
+  Someone's Blog
 
-# Data
-gavatar: http://dreamofbook.qiniudn.com/Az..png
-favicon: img/favicon.png
+nav_lists:
+  - titles:
+      en: About
+      zh: 关于
+      zh-Hans: 关于
+      zh-Hant: 關於
+    url: /about.html
 
-douban_username:  
-twitter_username: 
-github_username: 
-facebook_username: 
-weibo_username: 
-zhihu_username: 
+# paths:
+#   base: /
+#   home: /
+#   all:  /all.html
+#   rss:  /feed.xml
 
-# Build settings  
-# use Github Flavored Markdown !important  
-# document: http://jekyllrb.com/docs/configuration/#kramdown  
+## GitHub repository (if the site is hosted by GitHub) ##
+# repository:  #e.g. someone/someone.github.io
+# repository_tree:  #e.g. master
+
+## Language & timezone ##
+lang: zh #the language of your site, eg: en(English), zh(简体中文), zh-Hans(简体中文), zh-Hant(繁體中文)
+timezone: Asia/Shanghai #see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
+
+## Author & social ##
+author:
+  name: Someone
+  # email:  #your Email address e.g. someone@site.com
+  # facebook:  #your Facebook username
+  # twitter:  #your Twitter username
+  # github:  #your GitHub username
+  # googleplus:  #your Google+ username
+  # weibo:  #your Weibo username
+  # douban:  #your Douban username
+  # linkedin:  #your Linkedin username
+
+## TOC
+toc:
+  # selectors: 'h1,h2,h3'
+
+## Comment system (Disqus) ##
+disqus:
+  # shortname:  #the Disqus shortname for the site
+
+## Comment system (gitalk) ##
+# please refer to https://github.com/gitalk/gitalk for more info.
+gitalk:
+  # clientID:  #Github Application Client ID
+  # clientSecret:  #Github Application Client Secret
+  # repository:  #Github repo
+  # owner:  #Github repo owner
+  # admin: #Github repo owner and collaborators, only these guys can initialize github issues, IT IS A LIST.
+    # - owner
+
+## Google Analytics ##
+# ga_tracking_id:  #Google analytics id for the site
+
+## Reading quantity (LeanCloud) ##
+leancloud:
+  # app_id:  #LeanCloud App id
+  # app_key:  #LeanCloud App key
+  # app_class:  #LeanCloud App class
+
+# mathjax: true
+# mathjax_autoNumber: true
+# mermaid: true
+# chart: true
+
+## Paginate ##
+paginate: 7
+paginate_path: /page:num
+
+## Post excerpts ##
+excerpt_separator: <!--more-->
+excerpt_type: text # text | html
+
+## Sources ##
+# sources: bootcss #eg: bootcss | unpkg
+
+## Build ##
 markdown: kramdown
 highlighter: rouge
-permalink: pretty
-paginate: 8
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+permalink: date
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone: Asia/Shanghai
+exclude:
+  - CHANGELOG.md
+  - CHECKLIST.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README-*.md
+  - README.md
+  - gulpfile.js
+  - jekyll-text-theme.gemspec
+  - package-lock.json
+  - package.json
+  - /docs
+  - /node_modules
+  - /screenshots
+  - /test
+  - /vendor
 
-# Defaults for posts
-defaults:
-  -
-    scope: 
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      author: "CnFeat"
-      header-img: "img/green.jpg" # We don't want posts without a header image, that whould mean white on white
+## Plugins ##
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+  - jemoji
 
-# Comments 
-comments :
-  provider : duoshuo
-  duoshuo :
-    short_name : 
-  disqus :
-      short_name : 
-
-# Analytics and webmaster tools stuff goes here
-google_analytics: 
-google_verify:
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
-
-# Links to include in footer navigation
-
-theme: jekyll-theme-midnight
+## Server ##
+server_url: "0.0.0.0"

@@ -1,27 +1,22 @@
 ---
 layout: page
-title: "About"
-description: "这里是描述"
-header-img: "img/green.jpg"
+titles:
+  en: About
+  zh: 关于
+  zh-Hans: 关于
+  zh-Hant: 關於
+key: page-about
 ---
 
-我是杜晓萌，这里是我的自我介绍。。。
+Welcome to my blog! :earth_asia: :earth_africa: :earth_americas:
 
-### 坚信
+{% highlight javascript %}
+(() => console.log('hello, world!'))();
+{% endhighlight %}
 
+## Skills
 
-### 关注
-
-
-### 代表作
-
-
-### 我的朋友们
-
-
-### 联系
-
-
-<center>
-    <p><img src="http://i173.photobucket.com/albums/w63/cnfeat/2015-08-29-2_zpsqj7po8eo.png" align="center"></p>
-</center>
+- HTML5, CSS3(SASS), JavaScript(ES2017, Node.js), Bash(Zsh)
+- React, React Native, Vue.js
+- gulp, webpack
+- Adobe Photoshop, Sketch
